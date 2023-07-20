@@ -1,4 +1,4 @@
-# SAAS Boilerplate
+# SaaS Boilerplate
 ## Description
 This is a boilerplate for a SAAS application. It is built with NodeJS and React
 
