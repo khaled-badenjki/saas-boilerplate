@@ -1,0 +1,12 @@
+version: '3'
+services:
+  landing-page:
+    build: ./landing-page
+    volumes:
+      - static-content:/app/.next/static
+      - public:/app/public
+    ports:
+      - 3000:3000
+volumes:
+  static-content:
+  public:
