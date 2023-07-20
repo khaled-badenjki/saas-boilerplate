@@ -3,10 +3,17 @@ services:
   landing-page:
     build: ./landing-page
     volumes:
-      - static-content:/app/.next/static
-      - public:/app/public
+      - landing-page-static-content:/app/.next/static
+      - landing-page-public:/app/public
     ports:
       - 3000:3000
+  dashboard:
+    build: ./dashboard
+    volumes:
+      - dashboard-public:/app/public
+    ports:
+      - 3001:3000
 volumes:
-  static-content:
-  public:
+  landing-page-static-content:
+  landing-page-public:
+  dashboard-public:
