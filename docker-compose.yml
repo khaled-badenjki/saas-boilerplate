@@ -13,6 +13,10 @@ services:
       - dashboard-public:/app/public
     ports:
       - 3001:3000
+  api:
+    build: ./api
+    ports:
+      - 3002:3000
 volumes:
   landing-page-static-content:
   landing-page-public:
